@@ -7,7 +7,8 @@
     android:layout_width="fill_parent"
     android:layout_height="fill_parent">
     
-    <com.aselalee.bouncingball.BouncingBallView 
+    <com.aselalee.bouncingball.BouncingBallView
+        android:id="@+id/bbv"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent" >
     </com.aselalee.bouncingball.BouncingBallView>

@@ -31,12 +31,16 @@ public class BouncingBallView extends View {
 	      box = new Box(0xff00003f);  // ARGB
 	      ball = new Ball(Color.GREEN);
 	      statusMsg = new StatusMessage(Color.CYAN);
-	  
+
 	      // To enable keypad
 	      this.setFocusable(true);
 	      this.requestFocus();
 	      // To enable touch mode
 	      this.setFocusableInTouchMode(true);
+   }
+
+   public void setRadius(float mRadius) {
+	   ball.setRadius(mRadius);
    }
 
    // Called back to draw the view. Also called after invalidate().
