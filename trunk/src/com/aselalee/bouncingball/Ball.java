@@ -15,11 +15,15 @@ public class Ball {
    
    // Constructor
    public Ball(int color) {
-      bounds = new RectF();
-      paint = new Paint();
-      paint.setColor(color);
+	   bounds = new RectF();
+	   paint = new Paint();
+	   paint.setColor(color);
    }
-  
+
+   public void setRadius(float mRadius) {
+	   radius = mRadius;
+   }
+
    public void moveWithCollisionDetection(Box box) {
       // Get new (x,y) position
       x += speedX;
