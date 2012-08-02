@@ -2,5 +2,7 @@
 <resources>
 
     <string name="app_name">BouncingBall</string>
+    <string name="bouncing_ball">Bouncing Ball</string>
+    <string name="camera">Camera</string>
 
 </resources>
