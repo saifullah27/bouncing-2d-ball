@@ -102,6 +102,8 @@ public class BouncingBallView extends View {
                ball.radius *= 0.95;  // Decrease radius by 5%
             }
             break;
+         case KeyEvent.KEYCODE_BACK:
+        	 return false;
       }
       return true;  // Event handled
    }
