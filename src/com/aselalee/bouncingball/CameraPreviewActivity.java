@@ -1,6 +1,7 @@
 package com.aselalee.bouncingball;
 
 import android.app.Activity;
+import android.content.res.Configuration;
 import android.os.Bundle;
 
 public class CameraPreviewActivity extends Activity {
@@ -19,5 +20,11 @@ public class CameraPreviewActivity extends Activity {
 	@Override
 	public void onPause() {
 		super.onPause();
+	}
+
+	@Override
+	public void onConfigurationChanged(Configuration newConfig) {
+		super.onConfigurationChanged(newConfig);
+		((CustomCameraView)findViewById(R.id.previewSurface)).setCameraDisplayOrientation(this);
 	}
 }
