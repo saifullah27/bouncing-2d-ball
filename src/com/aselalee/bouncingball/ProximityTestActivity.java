@@ -46,6 +46,7 @@ public class ProximityTestActivity extends Activity implements SensorEventListen
 	@Override
 	public void onResume() {
 		Log.i("ProximityTest", this.getClass().getName() + " - onResume");
+		mKeyGaurdLock.reenableKeyguard();
 		super.onResume();
 	}
 
