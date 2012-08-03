@@ -28,4 +28,12 @@ public class MainActivity extends Activity {
 		getApplication().startActivity(ballIntent);
 		return;
 	}
+
+	public void openProximityActivity(View view) {
+		Intent ballIntent = new Intent(getBaseContext(), ProximityTestActivity.class);
+		ballIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+//		ballIntent.addFlags(Intent.FLAG_ACTIVITY_NO_HISTORY);
+		getApplication().startActivity(ballIntent);
+		return;
+	}
 }

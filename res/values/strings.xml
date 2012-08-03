@@ -4,5 +4,7 @@
     <string name="app_name">BouncingBall</string>
     <string name="bouncing_ball">Bouncing Ball</string>
     <string name="camera">Camera</string>
+    <string name="proximity">Proxymity Activity</string>
+    <string name="proximity_text">Proximity Sensor Test Activity</string>
 
 </resources>

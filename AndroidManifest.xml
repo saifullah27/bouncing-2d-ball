@@ -6,6 +6,8 @@
 
     <uses-sdk android:minSdkVersion="10" />
     <uses-permission android:name="android.permission.CAMERA"/>
+    <uses-permission android:name="android.permission.WAKE_LOCK"/>
+    <uses-permission android:name="android.permission.DISABLE_KEYGUARD"/>
 
     <application
         android:icon="@drawable/ic_launcher"
@@ -19,6 +21,7 @@
         </activity>
         <activity android:name=".BouncingBallActivity" android:theme="@android:style/Theme.Black.NoTitleBar.Fullscreen"/>
         <activity android:name=".CameraPreviewActivity" android:theme="@android:style/Theme.Light.NoTitleBar.Fullscreen" android:configChanges="orientation"/>
+        <activity android:name=".ProximityTestActivity"></activity>
     </application>
 
 </manifest>
